@@ -38,6 +38,17 @@
   background-color: var(--theme-neon-green);
 }
 
+#random-advice-button:hover{
+  /* horizontal, vertical, blur, radius*/
+  box-shadow: 0px 0px 20px 3px var(--theme-neon-green);
+  cursor: pointer;
+}
+
+#random-advice-button:disabled {
+  background-color: var(--theme-grayish-blue);
+  cursor: not-allowed; /* Show "not allowed" cursor for disabled state */
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
