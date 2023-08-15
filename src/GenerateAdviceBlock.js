@@ -38,7 +38,7 @@ const GenerateAdviceBlock = () => {
 
     const animateDice = () => {
         const diceIcon = diceIconRef.current;
-        const currentRotation = getRotationAngle(buttonRef.current);
+        const currentRotation = getRotationAngle(diceIcon);
     
         if (currentRotation === 0) {
           // Rotate the icon to -180 degrees
