@@ -29,7 +29,7 @@ const GenerateAdviceBlock = () => {
 
     const handleDiceButtonClick = () => {
         console.log("Dice button clicked");
-        animateDice(); // You need to implement this function
+        {/*animateDice(); // You need to implement this function*/}
         handleClick();
 
         // Generate advice when dice button is clicked
