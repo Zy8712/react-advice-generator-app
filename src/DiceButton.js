@@ -4,6 +4,7 @@ import './App.css';
 
 function DiceButton({ onClick, disabled }) {
     const buttonRef = useRef(null); // Create a useRef for the button element
+    const diceIconRef = useRef(null); // Create a useRef for the dice icon
 
     return (
         <div className="w-full absolute -bottom-16 block flex justify-center">
@@ -14,7 +15,7 @@ function DiceButton({ onClick, disabled }) {
                 disabled={disabled}
                 ref={buttonRef} // Attach the ref to the button element
             >
-                <img src={diceIcon} alt="dice_icon" />
+                <img ref={diceIconRef} src={diceIcon} alt="dice_icon" />
             </button>
         </div>
     );
